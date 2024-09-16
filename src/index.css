@@ -1,13 +1,207 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-image: url('C:/Users/Younes/Desktop/test-technique/dog-ceo-website/src/images/ai-generated-labrador-retriever-dog-picture_23-2150644704.jpg'); /* Chemin de l'image */
+  background-size: cover; /* L'image couvre tout l'écran */
+  background-position: center; /* Centrer l'image */
+  background-repeat: no-repeat; /* Empêche la répétition de l'image */
+  background-attachment: fixed; /* Fixer l'image pour qu'elle ne défile pas avec la page */
+  position: relative;
+  height: 100vh; 
+  color: beige;
 }
-
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  background-repeat: no-repeat; /* Empêche la répétition de l'image */
+  background-attachment: fixed; /* Fixer l'image pour qu'elle ne défile pas avec la page */
+ 
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: inherit; /* Utilise la même image */
+  background-size: cover;
+  background-position: center;
+  filter: blur(2px); /* Applique le flou */
+  z-index: -1; /* Place l'image floue derrière le contenu */
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+/* styles.css */
+
+/* Style for the card in the Home page */
+
+.form-control{
+  background-color: rgba(0, 0, 0, 0.507);
+  width: 45%;
+  border-color: black;
+  border-radius: 3px;
+  color: rgba(252, 252, 252, 0.678);
+}
+.form-control::placeholder {
+  color: rgb(240, 240, 240); /* Couleur blanche pour le texte du placeholder */
+  opacity: 1; /* Assure que le placeholder est bien visible */
+}
+.form-control:focus {
+  background-color: rgba(0, 0, 0, 0.678);; /* Choisis la couleur que tu veux pour le champ actif */
+  border-color: #e0e2e3bd; /* Couleur de la bordure au focus */
+  box-shadow: none; /* Optionnel : enlève le box-shadow par défaut de Bootstrap */
+  outline: none; /* Enlève l'outline par défaut */
+}
+
+/* Center the text inside the card */
+.card-body {
+  padding: 15px;
+}
+/* Style for the card */
+/* .custom-card {
+  
+  /* border-radius: 10px; Round the corners of the card */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); Add a soft shadow for better presentation */
+  /* margin: 0 auto; Center the card within the column */
+/*}
+
+/* Define the height and width for the image and maintain aspect ratio */
+/* .custom-img {
+  height: 250px; /* Set the height of the image */
+  /* width: 100%; Ensure the image takes up the full width of the card */
+  /* object-fit: cover; Maintains aspect ratio while covering the entire image area */
+  /* border-top-left-radius: 10px; /* Match the card's border radius */
+  /* border-top-right-radius: 10px; */ 
+/* } */ */ */
+/* Styles des cartes */
+.custom-card {
+  /* background-color: #ffffff; Couleur de fond blanche pour une apparence propre */
+  border-radius: 15px; /* Coins arrondis pour un aspect doux */
+  /* border: 1px solid #ddd; Bordure subtile */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Ombre douce pour donner de la profondeur */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Effet au survol */
+.custom-card:hover {
+  transform: translateY(-3px); /* Légère translation vers le haut au survol */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Augmentation de l'ombre pour un effet de profondeur */
+}
+
+/* Style de l'image dans la carte */
+.custom-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover; /* Assure que l'image ne se déforme pas */
+  /* border-bottom: 1px solid #ddd; Légère bordure sous l'image */
+}
+
+/* Texte dans la carte */
+.card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-title {
+  
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #ffffff; /* Texte secondaire en gris */
+}
+
+/* Ajout d'une icône d'information au survol */
+.custom-card:hover .card-info {
+  opacity: 1; /* L'icône devient visible au survol */
+}
+
+/* Icône d'information */
+.card-info {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.2rem;
+
+  opacity: 0; /* Initialement invisible */
+  transition: opacity 0.3s ease;
+}
+
+/* Title styles for the gallery page */
+.gallery-title {
+  font-size: 2.5rem;
+ /* color: #000000; /* Orange color for title */
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.navbar{
+  background-color: rgb(22, 22, 22);
+  background-size: cover; /* L'image couvre tout l'écran */
+  background-position: center; /* Centrer l'image */
+  
+}
+
+/* Bannière pour l'image de chien */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 60vh; /* Hauteur de la bannière */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Couvre toute la zone sans déformer l'image */
+  filter: brightness(70%); /* Rend l'image plus sombre pour faire ressortir le texte */
+}
+
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: rgb(255, 255, 255); /* Texte en blanc */
+  z-index: 1;
+}
+
+/* Texte de la bannière avec tailles responsives */
+.banner-text {
+  /* font-family: 'Dancing Script', cursive; */
+  font-size: 5vw; /* Utilisation de vw pour que la taille du texte soit proportionnelle à la largeur de l'écran */
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.banner-subtext {
+  font-size: 2.5vw; /* Taille responsive pour le sous-texte */
+  margin-top: 10px;
+}
+
+/* Media Queries pour ajuster la taille du texte sur petits écrans */
+@media (max-width: 768px) {
+  .banner-text {
+    font-size: 8vw; /* Augmentation du texte pour les petits écrans */
+  }
+  
+  .banner-subtext {
+    font-size: 4vw; /* Sous-texte ajusté */
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-text {
+    font-size: 10vw; /* Texte encore plus grand pour les très petits écrans */
+  }
+  
+  .banner-subtext {
+    font-size: 5vw;
+  }
 }
