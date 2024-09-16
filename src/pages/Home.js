@@ -15,7 +15,7 @@ function Home() {
     <div className="d-flex justify-content-center mt-3">
     <div className="banner">
       <div className="banner-content">
-        <h1 className="display-4">Découvrez les plus belles races de chiens !</h1>
+        <h1 className="display-4">Découvrez les plus belles races de chiens !!</h1>
         {/* <p className="banner-subtext">Découvrez les plus belles races de chiens !</p> */}
       </div>
       {/* Image aléatoire affichée en bannière */}
