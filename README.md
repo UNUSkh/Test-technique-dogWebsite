@@ -9,7 +9,7 @@ A React web application that shows a gallery of dog images, allows searching for
 - **Random Dog Image**: The homepage displays a random dog image upon load.
 
 ## Demo
-You can access the live version of the project [here](YOUR_DEPLOYMENT_URL).
+You can access the live version of the project [https://barkopedia.netlify.app/](https://barkopedia.netlify.app/).
 
 ## Tech Stack
 
