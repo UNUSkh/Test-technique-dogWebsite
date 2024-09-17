@@ -153,7 +153,14 @@ code {
   color: rgb(255, 255, 255);
   z-index: 1;
 }
-
+/* Loader style */
+.loader-container {
+  display: flex;
+  justify-content: center;
+ margin-top: 8%;
+  min-height: 50vh;
+  position: relative; 
+}
 /* Centered Image */
 .centered-image {
   display: block;
@@ -257,11 +264,4 @@ code {
   .navbar-brand {
     font-size: 21px;
   }
-}
-.loader-container {
-  display: flex;
-  justify-content: center;
- margin-top: 8%;
-  min-height: 50vh; /* Ajustez selon vos besoins */
-  position: relative; /* Assurez-vous que le conteneur est relatif si vous utilisez des positions absolues */
 }
