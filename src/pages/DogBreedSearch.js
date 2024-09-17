@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import CustomCard from '../components/CustomCard';
 import FadeLoader from "react-spinners/FadeLoader";
-import imog from "C:/Users/Younes/Desktop/test-technique/dog-ceo-website/src/images/no-pets-allowed2.png";
+import imog from "../images/no-pets-allowed2.png";
 
 function DogBreedSearch() {
   const [breed, setBreed] = useState('');
