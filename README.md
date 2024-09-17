@@ -1,75 +1,94 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Barkopedia Website
 
-## Available Scripts
+A React web application that shows a gallery of dog images, allows searching for specific dog breeds, and displays a random dog image on the homepage. The application uses the [Dog CEO API](https://dog.ceo/dog-api/) to fetch dog images and breed information.
 
-In the project directory, you can run:
+## Features
+- **Dog Gallery**: View random dog images in a gallery.
+- **Breed Search**: Search for specific dog breeds and view images.
+- **Random Dog Image**: The homepage displays a random dog image upon load.
 
-### `npm start`
+## Demo
+You can access the live version of the project [here](YOUR_DEPLOYMENT_URL).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tech Stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **React**: Frontend JavaScript framework.
+- **Bootstrap**: CSS framework for responsive design.
+- **React-Bootstrap**: React components built using Bootstrap.
+- **FontAwesome**: Used for displaying social media icons.
+- **Dog CEO API**: A public API used to fetch dog breed data and images.
+- **React Router**: Handles page navigation within the app.
+- **React Spinners**: Provides loading spinners during data fetching.
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+Make sure you have the following tools installed on your local development environment:
+- Node.js (version 14 or higher)
+- npm or yarn (Node package manager)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/UNUSkh/Test-technique-dogWebsite.git
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Navigate to the project directory**:
+   ```bash
+   cd dog-ceo-website
+   ```
 
-### `npm run eject`
+3. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Running the Project
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. **Start the development server**:
+   ```bash
+   npm start
+   ```
+   The app should now be running on `http://localhost:3000`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. **Building for production**:
+   ```bash
+   npm run build
+   ```
+   This command builds the app for production, outputting static assets into the `build` directory.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Folder Structure
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **src/**: Contains the source code for the project.
+  - **components/**: Reusable React components (e.g., Navbar, Footer, CustomCard).
+  - **pages/**: Main application pages (e.g., Home, DogGallery, DogBreedSearch).
+  - **images/**: Static assets such as images used across the app.
+  - **App.js**: Main app component that defines routes.
+  - **index.js**: Entry point of the application.
+  - **App.css**: Custom styles for the application.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Dependencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The main dependencies are listed in the `package.json` file. Here's a quick overview of the most important ones:
 
-### Analyzing the Bundle Size
+- **React**: The main library for building user interfaces.
+- **Bootstrap & React-Bootstrap**: Used for responsive design and styling.
+- **React-Router-Dom**: Handles navigation and routing in the app.
+- **FontAwesome**: Provides social media icons.
+- **React Spinners**: Displays loading spinners during API requests.
+- **Dog CEO API**: Provides dog images and breed data.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+If you have any questions, feel free to reach out:
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# Test-technique-dogWebsite
-test technique pour offre alternant fullstack
->>>>>>> 58ece798a23e6568069a70a6f258d3c18db50df8
+- **Author**: Younes Ayoub Khoya
+- **LinkedIn**: [https://www.linkedin.com/in/younes-ayoub-khoya/](https://www.linkedin.com/in/younes-ayoub-khoya/)
+- **GitHub**: [https://github.com/UNUSkh](https://github.com/UNUSkh)
+- **Personal Website**: [https://khoyayounesayoub.netlify.app/](https://khoyayounesayoub.netlify.app/)
