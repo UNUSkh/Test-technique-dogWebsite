@@ -1,6 +1,6 @@
 /* Body */
 body {
-  background-image: url('./images/ai-generated-labrador-retriever-dog-picture_23-2150644704.jpg'); /* Chemin relatif à partir du fichier CSS */
+  background-image: url('./images/ai-generated-labrador-retriever-dog-picture_23-2150644704.jpg'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -8,7 +8,7 @@ body {
   position: relative;
   height: 100vh;
   color: beige;
-  margin: 0; /* Assure qu'il n'y a pas de marges par défaut */
+  margin: 0; 
 }
 
 /* Background Blur Effect */
@@ -25,7 +25,7 @@ body::before {
   background-repeat: no-repeat;
   background-attachment: fixed;
   filter: blur(2px);
-  z-index: -1; /* Place l'image floue derrière le contenu */
+  z-index: -1; 
 }
 
 /* Code Styling */
